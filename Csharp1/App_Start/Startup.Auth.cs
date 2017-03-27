@@ -95,6 +95,9 @@ namespace Csharp1
             {
                 System.Configuration.KeyValueConfigurationElement emailAccountSetting =
                     rootWebConfig1.AppSettings.Settings["emailAccount"];
+                System.Configuration.KeyValueConfigurationElement emailPasswordSetting =
+                    rootWebConfig1.AppSettings.Settings["emailPassword"];
+
                 if (emailAccountSetting != null)
                     Console.WriteLine("customsetting1 application string = \"{0}\"",
                         emailAccountSetting.Value);
